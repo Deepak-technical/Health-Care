@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Maleria</title>
+</head>
+
+<section class="text-gray-600 body-font">
+  <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+    <img class="lg:w-1/2 md:w-1/2 mb-10 object-cover object-center rounded" alt="hero" src="../static/images/test.jpg">
+    <div class="text-center lg: w-full">
+      <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Check If your Cell is Affected By Maleria or Not</h1>
+      <p class="mb-8 text-xl  leading-relaxed">Malaria is a disease caused by a parasite. The parasite is spread to humans through the bites of infected mosquitoes.<br/> People who have malaria usually feel very sick with a high fever and shaking chills.
+
+        While the disease is uncommon in temperate climates, malaria is still common in tropical and subtropical countries.<br/> Each year nearly 290 million people are infected with malaria, and more than 400,000 people die of the disease.</p>
+      <!-- <div class="flex justify-center">
+        <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Button</button>
+        <button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+      </div> -->
+    </div>
+    <p class=" flex lg:text-4xl my-4 text-{{color}}-500 text-black mx-auto">{{result}}</p>
+    <form action="/malaria" method="POST" enctype="multipart/form-data" style="margin-top: 30px; width: 80%; text-align: center; margin: auto;" onsubmit="showloading()">
+      <span class="btn btn-default btn-file text-xl text-black">
+        Select Image <input type="file" name="file">
+    </span><br><br>
+        <input  type="submit" value="Upload" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
+  </form>
+  </div>
+  
+</section>
+<body>
+  
+</body>
+</html>

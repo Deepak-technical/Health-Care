@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-blue-500 rounded-full" viewBox="0 0 24 24">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+        </svg>
+        <span class="ml-3 text-xl">Tailblocks</span>
+      </a>
+      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900">Home</a>
+        <a class="mr-5 hover:text-gray-900">About</a>
+        <a class="mr-5 hover:text-gray-900">Services</a>
+        <a class="mr-5 hover:text-gray-900">Contact Us</a>
+      </nav>
+
+    </div>
+  </header>
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <img class="lg:w-1/2 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="../static/images/heart.jpeg">
+      <div class="text-center  w-full">
+        <h1 class="title-font flex justify-center sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Worry About Your Heart Is<span> <img class="w-20" src="../static/images/heart4.png"/> </span>or Not??
+        Lets Check Out It</h1>
+        <p class="mb-8 text-xl leading-relaxed">Heart disease is the leading cause of death for men, women, and people of most racial and ethnic groups in the India<br>
+          One person dies every 36 seconds in the India from cardiovascular disease<br/>
+          About 659,000 people in the India die from heart disease each year—that’s 1 in every 4 deaths<br/>
+          Heart disease costs the India about $363 billion each year from 2016 to 2017.2 This includes the cost of health care services, medicines, and lost productivity due to death.</p>
+        <div class="flex justify-center">
+          <a href="/heart"><button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Konw More</button></a>
+          <a href="/"></a><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Back To Home</button></a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <div class="w-3/4 flex justify-center lg:text-4xl my-4 text-{{color}}-500 text-black mx-auto text-center sm:text-xl">{{prediction}}</div>
+  <form action="/heart" method="POST">
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Age</label>
+      <input type="text" id="age" name="age" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Sex (0-Male | 1-Female )</label>
+      <input type="text" id="sex" name="sex" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Chest Pain Type</label>
+      <input type="text" id="chest pain type" name="chest pain type" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Trestbps :</label>
+      <input type="text" id="trestbps" name="trestbps" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Serum cholestoral in mg/dl :</label>
+      <input type="text" id="serum cholestoral in mg/dl" name="serum cholestoral in mg/dl" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Restecg</label>
+      <input type="text" id="restecg" name="restecg" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Thalach</label>
+      <input type="text" id="thalach" name="thalach" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Exang</label>
+      <input type="text" id="exang" name="exang" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Oldpeak</label>
+      <input type="text" id="oldpeak" name="oldpeak" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Slope</label>
+      <input type="text" id="slope" name="slope" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Thal </label>
+      <input type="text" id="thal" name="thal" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">FBS </label>
+      <input type="text" id="thal" name="fbs" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="leading-7 text-sm text-gray-600 text-lg text-center justify-center">Cronary Calcium</label>
+      <input type="text" id="thal" name="ca" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="flex justify-center">
+      <button type="submit" class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Predict</button>
+    </div>
+ 
+  </form>
+</body>
+</html>
+
+
+
+
+<section class="text-gray-600 body-font overflow-hidden">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="text-center text-3xl text-gray-900 mb-10 text">Types Of Heart Diseses</div>
+    <div class="flex flex-wrap -m-12 justify-around">
+      <div class="p-12 md:w-1/2 flex flex-col items-start shadow-xl">
+        <span class="inline-block py-1 px-2 rounded bg-red-50 text-red-500 text-xl font-medium tracking-widest">About Heart</span>
+        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Cardiomyopathy (Heart Muscle Disease)</h2>
+        <p class="leading-relaxed mb-8">Cardiomyopathy is a disease of your heart muscle, or myocardium. It gets stretched, thickened, or stiff. Your heart may get too weak to pump well.
+
+          There are many possible causes of the disease, including genetic heart conditions, reactions to certain drugs or toxins (such as alcohol), and infections from a virus. Sometimes, chemotherapy causes cardiomyopathy. Many times, doctors can't find the exact cause.</p>
+        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+          <a class="text-red-500 inline-flex items-center">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>1.2K
+          </span>
+          <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+            </svg>6
+          </span>
+        </div>
+
+      </div>
+      <div class="p-12 md:w-1/2 flex flex-col items-start shadow-xl">
+        <span class="inline-block py-1 px-2 rounded bg-red-50 text-red-500 text-xl font-medium tracking-widest">About Heart</span>
+        <h2 class="sm:text-3xl text-2xl title-font font-medium text-gray-900 mt-4 mb-4">Congenital Heart Disease</h2>
+        <p class="leading-relaxed mb-8">Congenital heart disease happens when something goes wrong while the heart is forming in a baby that's still in the womb. The heart abnormality sometimes leads to problems right after birth, but other times there aren't any symptoms until you become an adult.
+
+          Septal abnormalities are among the most common congenital heart problems. These are holes in the wall that separates the left and right sides of your heart. You can get a procedure to patch the hole.</p>
+        <div class="flex items-center flex-wrap pb-4 mb-4 border-b-2 border-gray-100 mt-auto w-full">
+          <a class="text-red-500 inline-flex items-center">Learn More
+            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14"></path>
+              <path d="M12 5l7 7-7 7"></path>
+            </svg>
+          </a>
+          <span class="text-gray-400 mr-3 inline-flex items-center ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
+            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+              <circle cx="12" cy="12" r="3"></circle>
+            </svg>1.2K
+          </span>
+          <span class="text-gray-400 inline-flex items-center leading-none text-sm">
+            <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+              <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
+            </svg>6
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="text-gray-600 body-font">
+ 
+  <div class="container px-5 py-24 mx-auto">
+    <div class="text-center mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium text-center title-font text-gray-900 mb-4">How to Have A Healthy Heart</h1>
+      <p class="text-base text-xl leading-relaxed xl:w-full lg:w-full mx-auto">A little more than 1 in 10 Americans over the age of 20 show evidence of kidney disease.<br/> Some forms of kidney disease are progressive, meaning the disease gets worse over time. When your kidneys can no longer remove waste from blood, they fail.
+
+        <br/>Waste buildup in your body can cause serious problems and lead to death. To remedy this, your blood would have to be filtered artificially through dialysis, or you would need a kidney transplant.</p>
+    </div>
+    <div class="flex flex-wrap lg:w-4/5 sm:mx-auto sm:mb-2 -mx-2">
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Make healthy food choices</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Make physical activity part of your routine</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Manage diabetes, high blood pressure, and heart disease</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Try to choose foods with little or no added sugar.</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Be aware of the amount of OTC pills you take</span>
+        </div>
+      </div>
+      <div class="p-2 sm:w-1/2 w-full">
+        <div class="bg-gray-100 rounded flex p-4 h-full items-center">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" class="text-red-500 w-6 h-6 flex-shrink-0 mr-4" viewBox="0 0 24 24">
+            <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
+            <path d="M22 4L12 14.01l-3-3"></path>
+          </svg>
+          <span class="title-font font-medium">Have your kidney function tested if you’re at high risk</span>
+        </div>
+      </div>
+    </div>
+    <button class="flex mx-auto mt-16 text-white bg-red-500 border-0 py-2 px-8 focus:outline-none hover:bg-red-600 rounded text-lg">Know More -></button>
+  </div>
+</section>

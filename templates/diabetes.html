@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <title>Diabetics</title>
+</head>
+<style>
+  img{
+  max-width: 134% !important;
+}
+</style>
+<body>
+
+  <section class="text-gray-600 body-font">
+    <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+      <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="../static/images/test.jpg">
+      <div class="text-center lg:w-2/3 w-full">
+        <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Microdosing synth tattooed vexillologist</h1>
+        <p class="mb-8 leading-relaxed">Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled. Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache umami snackwave tilde chillwave ugh. Pour-over meditation PBR&amp;B pickled ennui celiac mlkshk freegan photo booth af fingerstache pitchfork.</p>
+        <div class="flex justify-center">
+          <a href="/diabetes"><button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Know More</button></a>
+          <a href="/"><button class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Predict</button></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="text-xl text-center text-{{color}}-500">{{prediction_text}}</div>
+  <form action="/diabetes" method="POST">
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class=" flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">Pregnancies</label>
+      <input type="text" id="Pregnancies" name="pregnancies" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class=" flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">Glucose</label>
+      <input type="text" id="Glucose" name="glucose" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class=" flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">BloodPressure</label>
+      <input type="text" id="BloodPressure" name="bloodpressure" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">SkinThickness</label>
+      <input type="text" id="SkinThickness" name="skinthickness" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class="flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">Insulin :</label>
+      <input type="text" id="Insulin" name="insulin" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class=" flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">BMI </label>
+      <input type="text" id="BMI" name="bmi" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class=" flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">DiabetesPedigreeFunction</label>
+      <input type="text" id="DiabetesPedigreeFunction" name="dpf" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+    <div class="relative flex-grow w-1/3 mx-auto my-4">
+      <label for="full-name" class=" flex leading-7 text-sm text-gray-600 text-lg text-center justify-center">Age</label>
+      <input type="text" id="Age" name="age" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-blue-500 focus:bg-transparent focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    </div>
+<div class="flex justify-center">
+    <button class=" text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Submit</button>
+  </div>
+  </form>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- <form action="/result" method="POST">
+  <label for="Pregnancies">Pregnancies : </label>
+  <input type="text" id="Pregnancies" name="Pregnancies">
+  <br>
+
+  <label for="Glucose">Glucose : </label>
+  <input type="text" id="Glucose" name="Glucose">
+  <br>
+
+  <label for="BloodPressure">BloodPressure : </label>
+  <input type="text" id="BloodPressure" name="BloodPressure">
+  <br>
+
+  <label for="SkinThickness">SkinThickness : </label>
+  <input type="text" id="SkinThickness" name="SkinThickness">
+  <br>
+
+  <label for="Insulin">Insulin : </label>
+  <input type="text" id="Insulin" name="Insulin">
+  <br>
+
+  <label for="BMI">BMI : </label>
+  <input type="text" id="BMI" name="BMI">
+  <br>
+
+  <label for="DiabetesPedigreeFunction">DiabetesPedigreeFunction : </label>
+  <input type="text" id="DiabetesPedigreeFunction" name="DiabetesPedigreeFunction">
+  <br>
+
+  <label for="Age">Age : </label>
+  <input type="text" id="Age" name="Age">
+  <br>
+  <br>
+
+  <input type="submit" value="Submit"><br><br>
+</form> -->
